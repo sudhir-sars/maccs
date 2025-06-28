@@ -1,0 +1,19 @@
+{
+  "name": "macos-dev-env",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "swift --version",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vknabel.vscode-swift-development-environment",
+        "ms-vscode.cpptools"
+      ],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
+    }
+  }
+}
